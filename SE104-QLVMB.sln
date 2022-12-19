@@ -5,7 +5,12 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "SE104-QLVMB\DataAccess.csproj", "{712558A3-22AF-48D4-87FC-F7806FB83AD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{DFB26143-2480-48B4-9E03-D0B82E745327}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{DFB26143-2480-48B4-9E03-D0B82E745327}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mix", "mix", "{BBF741DE-C83A-4123-9818-D1BDE0AE903B}"
+	ProjectSection(SolutionItems) = preProject
+		utils.cs = utils.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
