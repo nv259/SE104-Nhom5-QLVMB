@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Service
 {
-    public partial class HomeForm : Form
+    public partial class UserForm : Form
     {
-        public HomeForm()
+        public UserForm()
         {
             InitializeComponent();
         }
