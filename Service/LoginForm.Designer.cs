@@ -50,7 +50,7 @@
             this.Username_txtBox.PlaceholderText = "  username";
             this.Username_txtBox.Size = new System.Drawing.Size(427, 27);
             this.Username_txtBox.TabIndex = 0;
-            this.Username_txtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            //this.Username_txtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // PasswordtxtBox
             // 
@@ -88,7 +88,7 @@
             this.RegisterBtn.TabIndex = 3;
             this.RegisterBtn.Text = "Đăng Ký";
             this.RegisterBtn.UseVisualStyleBackColor = true;
-            this.RegisterBtn.Click += new System.EventHandler(this.button1_Click_1);
+            this.RegisterBtn.Click += new System.EventHandler(this.regBtn_click);
             // 
             // rmb_txtBox
             // 

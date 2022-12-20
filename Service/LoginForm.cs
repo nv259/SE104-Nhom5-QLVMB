@@ -1,3 +1,7 @@
+﻿using DataAccess.DAO;
+using DataAccess.DTO;
+
+
 namespace Service
 {
     public partial class LoginForm : Form
@@ -7,24 +11,27 @@ namespace Service
             InitializeComponent();
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void loginBtn_Click(object sender, EventArgs e)
         {
+            string MaDangNhap = this.Username_txtBox.Text;
+            string MatKhau = this.PasswordtxtBox.Text;
 
-        }
+            string query = "SELECT * FROM [dbo].NGUOIDUNG WHERE MaDangNhap = @MaDangNhap AND @MatKhau";
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            if (DataProvider.Instance.ExecuteQuery(query, new object[] { MaDangNhap, MatKhau }).Rows.Count > 0)
+            {
+                this.Hide();
 
+                UserForm user_form = new UserForm();
+                user_form.ShowDialog();
+
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác");
+                this.PasswordtxtBox.Text = "";
+            }
         }
 
         private void LoginForm_Load(object sender, EventArgs e)
@@ -32,7 +39,7 @@ namespace Service
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void regBtn_click(object sender, EventArgs e)
         {
 
         }
