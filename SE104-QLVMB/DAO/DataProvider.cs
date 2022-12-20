@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace DataAccess.DAO
 {
     public class DataProvider
     {
-        private string strCon = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Management;Integrated Security=True";
+        private string strCon = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLVMB;Integrated Security=True";
         private static DataProvider instance;
         public static DataProvider Instance
         {
