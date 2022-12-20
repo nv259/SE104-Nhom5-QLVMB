@@ -25,7 +25,7 @@ namespace SE104_QLVMB.DTO
         public string MatKhau { get { return mat_khau;  } set { mat_khau = value; } }
         public string MaNhom { get { return ma_nhom; } set { ma_nhom = value; } }
         public string TenNguoiDung { get { return ten_nguoi_dung; } set { ten_nguoi_dung = value; } }
-        public string DinhDanh { get { return dinh_danh; } set { dinh_danh = value } }
+        public string DinhDanh { get { return dinh_danh; } set { dinh_danh = value; } }
         public string Sdt { get { return sdt; } set { sdt = value; } }
     }
 }
